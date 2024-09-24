@@ -1,4 +1,4 @@
-# MiniLua
+# skynetlua
 
 This is Lua contained in a single header to be bundled in C/C++ applications with ease.
 [Lua](https://www.lua.org/) is a powerful, efficient, lightweight, embeddable scripting language.
@@ -7,7 +7,7 @@ This is Lua contained in a single header to be bundled in C/C++ applications wit
 
 ```c
 #define LUA_IMPL
-#include "lua.h"
+#include "skynetlua.h"
 
 int main() {
   lua_State *L = luaL_newstate();
@@ -23,11 +23,11 @@ int main() {
 
 ## Usage
 
-Copy `lua.h` into your C or C++ project, include it anywhere you want to use Lua API.
+Copy `skynetlua.h` into your C or C++ project, include it anywhere you want to use Lua API.
 Then do the following in *one* C file to implement Lua:
 ```c
 #define LUA_IMPL
-#include "lua.h"
+#include "skynetlua.h"
 ```
 
 By default it detects the system platform to use, however you can explicitly define one.

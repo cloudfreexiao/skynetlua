@@ -1,6 +1,5 @@
 /*
-  minilua.h -- Lua in a single header
-  Project URL: https://github.com/edubart/minilua
+  skynetlua.h -- Skynet Lua in a single header
 
   This is Lua contained in a single header to be bundled in C/C++ applications with ease.
   Lua is a powerful, efficient, lightweight, embeddable scripting language.

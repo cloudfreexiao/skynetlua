@@ -4,10 +4,10 @@ LDFLAGS=-ldl -lm
 
 all: lua example
 
-lua: lua.c ../minilua.h
+lua: lua.c ../skynetlua.h
 	$(CC) $(CFLAGS) -o lua lua.c $(LDFLAGS)
 
-example: example.c ../minilua.h
+example: example.c ../skynetlua.h
 	$(CC) $(CFLAGS) -o example example.c $(LDFLAGS)
 
 test: all

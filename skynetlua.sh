@@ -3,7 +3,7 @@
 SKYNETROOT=../skynet-cmake/skynet
 LUADIR="${SKYNETROOT}/3rd/lua"
 SKYNETDIR="${SKYNETROOT}/skynet-src"
-OUTFILE=skynetlua.h
+OUTFILE=src/skynetlua.h
 rm -f $OUTFILE
 
 cat <<EOF >> $OUTFILE
@@ -139,4 +139,4 @@ echo "#endif /* LUA_MAKE_LUA */" >> $OUTFILE
 # Comment all include headers
 sed -i .bak 's/#include "\([^"]*\)"/\/\*#include "\1"\*\//' $OUTFILE
 
-rm -f *.bak
+rm -f src/*.bak

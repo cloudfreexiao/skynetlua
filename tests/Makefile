@@ -4,11 +4,11 @@ LDFLAGS=-ldl -lm
 
 all: lua example
 
-lua: lua.c ../skynetlua.h
-	$(CC) $(CFLAGS) -o lua lua.c $(LDFLAGS)
+lua: lua.c
+	$(CC) $(CFLAGS) -o lua lua.c ../src/skynetlua.c  $(LDFLAGS) -I../src/
 
-example: example.c ../skynetlua.h
-	$(CC) $(CFLAGS) -o example example.c $(LDFLAGS)
+example: example.c
+	$(CC) $(CFLAGS) -o example example.c ../src/skynetlua.c $(LDFLAGS) -I../src/
 
 test: all
 	./example

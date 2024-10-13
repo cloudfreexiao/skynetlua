@@ -1,5 +1,4 @@
-#define LUA_IMPL
-#include "../skynetlua.h"
+#include "skynetlua.h"
 
 int main() {
   lua_State *L = luaL_newstate();
